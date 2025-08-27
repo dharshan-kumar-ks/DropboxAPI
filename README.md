@@ -1,18 +1,22 @@
 # Dropbox Business API Java Example
+
 This repo demonstrates how to:
 - Authenticate a Dropbox Business/Team user using OAuth2 (Authorization Code flow, manual copy-paste)
 - Fetch and display the team/organization info
 - List all team members using the app
 - Fetch and print sign-in (login_success) events for all users - Not yet implemented
 
-Registered my own Dropbox app at Dropbox App Console.
+I created a trial Business (Standard) account in Dropbox and registered my own Dropbox app at Dropbox App Console.
 Stored the app’s client ID, client secret in .env file
 <img width="1695" height="748" alt="image" src="https://github.com/user-attachments/assets/62afe14d-5428-4213-9059-05fd0c0a93bf" />
 <img width="1695" height="748" alt="image" src="https://github.com/user-attachments/assets/35b6da68-78d7-4ed1-aee3-7a6b260f4dae" />
+But I also found a form where Dropbox provides us with free Business account for developers: (on request-by-request basis) 
+https://docs.google.com/forms/d/e/1FAIpQLSfkzPmp9srHG9jwE3Uc0bFOwknN-rrLQWr1mf_3FGl86ydCiQ/viewform
 
 The program prints a Dropbox sign-in link. We need to open it in the browser, authorize the app, and copy the code=... value from the redirect URL & paste the code into the terminal.
 
-Example Output:
+
+### Example Output
 ```
 1. Open this URL in browser and authorize the app:
 https://www.dropbox.com/oauth2/authorize?client_id=ibr4llbt7tl4067&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A53682&scope=team_info.read+members.read+events.read&token_access_type=offline
