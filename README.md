@@ -10,11 +10,10 @@ I created a trial Business (Standard) account in Dropbox and registered my own D
 Stored the app’s client ID, client secret in .env file
 <img width="1695" height="748" alt="image" src="https://github.com/user-attachments/assets/62afe14d-5428-4213-9059-05fd0c0a93bf" />
 <img width="1695" height="748" alt="image" src="https://github.com/user-attachments/assets/35b6da68-78d7-4ed1-aee3-7a6b260f4dae" />
-But I also found a form where Dropbox provides us with free Business account for developers: (on request-by-request basis) 
-https://docs.google.com/forms/d/e/1FAIpQLSfkzPmp9srHG9jwE3Uc0bFOwknN-rrLQWr1mf_3FGl86ydCiQ/viewform
+But I also found a <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkzPmp9srHG9jwE3Uc0bFOwknN-rrLQWr1mf_3FGl86ydCiQ/viewform">form</a> where Dropbox provides us with free Business account for developers: (on request-by-request basis) 
 
 The program prints a Dropbox sign-in link. We need to open it in the browser, authorize the app, and copy the code=... value from the redirect URL & paste the code into the terminal.
-
+I had used <a href="https://github.com/dropbox/dropbox-sdk-java?tab=readme-ov-file#setup">Dropbox Official SDK</a> v5.4.4 instead of direct API calls to my Dropbox application. 
 
 ### Example Output
 ```
